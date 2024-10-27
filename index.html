@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splitwise</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Splitwise</h1>
+        <form id="formulario-gastos" class="mb-4">
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <select class="form-control" id="usuario" required>
+                    <option value="">---</option>
+                    <option value="Usuario1">Usuario1</option>
+                    <option value="Usuario2">Usuario2</option>
+                    <option value="Usuario3">Usuario3</option>
+                </select>
+                <small class="mensaje-error text-danger"></small> 
+            </div>
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control" id="titulo" placeholder="Título del gasto" required>
+                <small class="mensaje-error text-danger"></small> 
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Importe</label>
+                <input type="text" class="form-control" id="cantidad" placeholder="Cantidad" required>
+                <small class="mensaje-error text-danger"></small> 
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="text" class="form-control" id="fecha" placeholder="dd/mm/aaaa" required>
+                <small class="mensaje-error text-danger"></small> 
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Añadir Gasto</button>
+        </form>
+        
+        <h2>Gastos Registrados</h2>
+        <div id="lista-gastos" class="mb-4"></div>
+        
+        <h2>Saldos Individuales</h2>
+        <div id="lista-balances" class="mb-4"></div>
+
+        <h2>Deudas entre Usuarios</h2>
+        <div id="lista-deudas"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

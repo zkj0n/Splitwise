@@ -1,0 +1,28 @@
+form {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 5px;
+}
+img {
+    width: 40px;
+    height: 40px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.is-invalid {
+    border-color: red;
+}
+
+.is-valid {
+    border-color: green;
+}
+.mensaje-error {
+    font-size: 0.9em;
+    color: red;
+    margin-top: 0.25rem;
+}
