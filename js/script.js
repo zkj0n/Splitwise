@@ -30,7 +30,7 @@ function agregarGasto(gasto) {
     const div = document.createElement('div');
     div.className = 'item-gasto';
     div.innerHTML = `
-        <img src="../img/${gasto.usuario.toLowerCase()}.png" alt="${gasto.usuario}" class="imagen-usuario">
+        <img src="/img/${gasto.usuario.toLowerCase()}.png" alt="${gasto.usuario}" class="imagen-usuario">
         <span>${gasto.usuario} pagó ${gasto.cantidad.toFixed(2)}€ el ${gasto.fecha}</span>
     `;
     listaGastos.appendChild(div);
@@ -50,7 +50,7 @@ function actualizarBalances() {
         const div = document.createElement('div');
         div.className = 'item-balance';
         div.innerHTML = `
-            <img src="../img/${persona.toLowerCase()}.png" alt="${persona}" class="imagen-usuario">
+            <img src="/img/${persona.toLowerCase()}.png" alt="${persona}" class="imagen-usuario">
             <span>${persona}: ${balance.toFixed(2)}€</span>
         `;
         listaBalances.appendChild(div);
